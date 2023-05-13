@@ -2,10 +2,12 @@ from selenium import webdriver
 from time import sleep
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options 
-  
+from getpass import getpass
+
+
 user=input('Enter Email Id:') 
 pwd=input('Enter Password:') 
-  
+pwd = getpass('Enter Password:')
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get('https://www.BilLife.com/')
 print ("Opened billife")
