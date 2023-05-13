@@ -3,16 +3,16 @@ from time import sleep
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options 
   
-usr=input('Enter Email Id:') 
+user=input('Enter Email Id:') 
 pwd=input('Enter Password:') 
   
 driver = webdriver.Chrome(ChromeDriverManager().install())
-driver.get('https://www.facebook.com/')
-print ("Opened facebook")
+driver.get('https://www.BilLife.com/')
+print ("Opened billife")
 sleep(1)
   
 username_box = driver.find_element_by_id('email')
-username_box.send_keys(usr)
+username_box.send_keys(user)
 print ("Email Id entered")
 sleep(1)
   
